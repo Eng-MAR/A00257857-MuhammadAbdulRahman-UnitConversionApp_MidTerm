@@ -4,14 +4,19 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    tools:ignore="ExtraText">
 
+    //TextView is created for the Heading of an App
+
+    //Radio group is created so that user can select the desired unit of conversio
+    //6 separate radio buttons are created, 1 for each unit
 
     <TextView
         android:id="@+id/Heading"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="72dp"
+        android:layout_marginTop="36dp"
         android:text="Select the UNIT to be Converted"
         android:textAlignment="center"
         android:textColor="@color/black"
@@ -35,51 +40,65 @@
             android:id="@+id/rbKM"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:backgroundTint="#0F8177"
             android:text="Kilometers into Miles"
             android:textColor="#0F8177"
+            android:textSize="15sp"
             android:textStyle="bold" />
 
         <RadioButton
             android:id="@+id/rbMK"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:buttonTint="#24A7E3"
             android:text="Miles into Kilometers"
             android:textColor="#24A7E3"
+            android:textSize="15sp"
             android:textStyle="bold" />
 
         <RadioButton
             android:id="@+id/rbIC"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:buttonTint="@color/purple_500"
             android:text="Inches into Centimeters"
             android:textColor="@color/purple_500"
+            android:textSize="15sp"
             android:textStyle="bold" />
 
         <RadioButton
             android:id="@+id/rbCI"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:buttonTint="@color/purple_200"
             android:text="Centimeters into Inches"
             android:textColor="@color/purple_200"
+            android:textSize="15sp"
             android:textStyle="bold" />
 
         <RadioButton
             android:id="@+id/rbKG"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:buttonTint="@color/black"
             android:text="Kilograms into Grams"
             android:textColor="@color/black"
+            android:textSize="15sp"
             android:textStyle="bold" />
 
         <RadioButton
             android:id="@+id/rbGK"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:buttonTint="#053051"
             android:text="Grams into Kilograms"
             android:textColor="#053051"
+            android:textSize="15sp"
             android:textStyle="bold" />
 
     </RadioGroup>
+
+    //EditText view for the user to input the value
 
     <EditText
         android:id="@+id/etInp"
@@ -104,6 +123,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/etInp" />
 
+    //TextView to display the result of conversion
+
     <TextView
         android:id="@+id/tvOut"
         android:layout_width="wrap_content"
@@ -114,6 +135,8 @@
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    //Button is created to perform the activity
 
     <Button
         android:id="@+id/button"
@@ -127,20 +150,25 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvOut" />
 
+    //TextView for displaying the formula of conversion
+
     <TextView
         android:id="@+id/tvFor"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="15dp"
-        android:text="FORMULA: "
-        android:textSize="15sp"
-        android:textAlignment="center"
-        android:textStyle="italic"
         android:background="#E91E63"
+        android:text="FORMULA: "
+        android:textAlignment="center"
         android:textColor="@color/white"
+        android:textSize="15sp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button" />
+        app:layout_constraintTop_toBottomOf="@+id/button"
+        app:layout_constraintVertical_bias="0.202" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
