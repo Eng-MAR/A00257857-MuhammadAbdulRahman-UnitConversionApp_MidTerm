@@ -9,10 +9,8 @@
     tools:ignore="ExtraText">
 
     //TextView is created for the Heading of an App
-
     //Radio group is created so that user can select the desired unit of conversio
     //6 separate radio buttons are created, 1 for each unit
-
     <TextView
         android:id="@+id/Heading"
         android:layout_width="wrap_content"
@@ -101,7 +99,6 @@
     </RadioGroup>
 
     //EditText view for the user to input the value
-
     <EditText
         android:id="@+id/etInp"
         android:layout_width="wrap_content"
@@ -126,7 +123,6 @@
         app:layout_constraintTop_toBottomOf="@+id/etInp" />
 
     //TextView to display the result of conversion
-
     <TextView
         android:id="@+id/tvOut"
         android:layout_width="wrap_content"
@@ -140,7 +136,6 @@
         app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
     //Button is created to perform the activity
-
     <Button
         android:id="@+id/button"
         android:layout_width="wrap_content"
@@ -154,7 +149,6 @@
         app:layout_constraintTop_toBottomOf="@+id/tvOut" />
 
     //TextView for displaying the formula of conversion
-
     <TextView
         android:id="@+id/tvFor"
         android:layout_width="match_parent"
